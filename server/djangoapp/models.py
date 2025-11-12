@@ -41,9 +41,7 @@ class CarModel(models.Model):
     # Other fields as needed
 
     def __str__(self):
-        return "Name: " + self.name + "," + \
-               "Type: " + self.cartype + "," + \
-               "year: " + self.year
+        return "Name: " + self.name + "," 
 
 
 # - Many-To-One relationship to Car Make model (One Car Make has many
