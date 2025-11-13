@@ -6,7 +6,6 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 
 
 # Create your models here.
-
 class CarMake(models.Model):
     name = models.CharField(null = False)
     description = models.CharField(max_length = 150,null = False)
@@ -41,7 +40,6 @@ class CarModel(models.Model):
 
     def __str__(self):
         return "Name: " + self.name + "," 
-
 
 # - Many-To-One relationship to Car Make model (One Car Make has many
 # Car Models, using ForeignKey field)
